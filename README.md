@@ -1,4 +1,4 @@
-Functions as a Service (FaaS) Implementation
+Scalable Faas Platform
 
 This repository contains an implementation of Functions as a Service (FaaS) using Docker and Kubernetes. The implementation includes functionalities for deploying, scaling, and managing serverless functions within a Kubernetes cluster.
 Directory Structure
