@@ -1,0 +1,26 @@
+kubectl create secret generic regcred     --from-file=.dockerconfigjson=faas/config.json     --type=kubernetes.io/dockerconfigjson
+
+kubectl config view --minify --raw > kube_config
+
+# Copy this kube_config to ~/.kube/config and use kubectl to access my kubernetes cluster.
+
+kubectl delete service <name>
+
+sudo kubeadm token create --print-join-command
+
+# Run this command to join.
+
+kubectl exec -it test-f7bbc6dcb-kzdsw -- /bin/bash
+
+kubectl describe HorizontalPodAutoscaler test-hpa
+
+kubectl get pods -n kube-system
+
+kubectl logs metrics-server-8857d6b7c-59xbb -n kube-system
+
+kubectl delete pod metrics-server-8857d6b7c-59xbb -n kube-system
+
+http://localhost:5000/memory?size=1G
+
+kubectl scale deployment test --replicas=1
+
